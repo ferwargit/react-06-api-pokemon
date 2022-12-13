@@ -1,5 +1,5 @@
 import React from 'react';
-import { UseFetch } from '../UseFetch' 
+import { UseFetch } from '../UseFetch'
 
 export const CardPokemon = ({url}) => {
 
@@ -13,15 +13,15 @@ export const CardPokemon = ({url}) => {
         ?
         <h1>Cargando...</h1>
         :
-        <div className='cards' style={{width:'14rem'}}>
+        <div className='cards' style={{width:'10rem'}}>
           <div className='card-header'>
-            <h5 className='card-title'></h5>
+            <h5 className='card-title'>{data.id}</h5>
           </div>
           <div className='card-body'>
-            <img src='' alt='imagen-pokemon'/>
+            <img src={data.sprites.front_default} alt='imagen-pokemon'/>
           </div>
           <div className='card-footer'>
-            <p className='card-text text-capitalize'></p>
+            <p className='card-text text-capitalize'>{data.forms[0].name}</p>
           </div>
         </div>
       }

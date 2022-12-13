@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { UseFetch } from "./UseFetch";
+import { Cards } from "./cards/Cards";
 
 const Pokemon = () => {
 
@@ -10,7 +11,16 @@ const Pokemon = () => {
 
   return (
     <>
-      <h1>Esta es la página de Pokemon</h1>
+      <h1>La página de los Pokemones</h1>
+
+      {
+        cargando
+        ?
+        <h1>Cargando...</h1>
+        :
+        <Cards results={data.results} />
+      }
+
     </>
   );
 }
