@@ -13,3 +13,7 @@ cd api-pokemon
 ```terminal
 npm start
 ```
+
+## Atributos del pokemon con id 1
+
+<https://pokeapi.co/api/v2/pokemon/1/>

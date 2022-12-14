@@ -1,5 +1,6 @@
 import React from 'react';
 import { CardPokemon } from './CardPokemon';
+import './Cards.css';
 
 export const Cards = ({results}) => {
   return (
@@ -8,7 +9,7 @@ export const Cards = ({results}) => {
         {
           results.map( pokemon => (
             <li className='card-item' key={pokemon.name}>
-              <CardPokemon url={pokemon.url} />
+              <CardPokemon urlPokemon={pokemon.url} />
             </li>
           ))
         }
