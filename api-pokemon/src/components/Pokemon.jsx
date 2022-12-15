@@ -3,15 +3,16 @@ import { UseFetch } from "./UseFetch";
 import { Cards } from "./cards/Cards";
 
 const Pokemon = () => {
-
+  // eslint-disable-next-line no-unused-vars
   const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon");
   const estado = UseFetch(url);
   const {cargando, data} = estado;
-  cargando ? console.log("Cargando...") : console.log(data.results);
-
+  
+  // cargando ? console.log("Cargando...") : console.log(data.results);
+  
   return (
     <>
-      <h1>La página de los Pokemones</h1>
+      <h1>La página de los 20 Pokemones</h1>
 
       {
         cargando
