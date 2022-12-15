@@ -12,20 +12,7 @@ export const UseFetch = (url) => {
       setResultado({ cargando: true, data: null });
       const response = await fetch(url);
       const data = await response.json();
-      // const respuesta = await response.json();
-      // const json = respuesta.results;
-      // console.log(json);
-      // ordenar alfabeticamente
-      // const data = json.sort((a, b) => {
-      //   if (a.name > b.name) {
-      //     return 1;
-      //   }
-      //   if (a.name < b.name) {
-      //     return -1;
-      //   }
-      //   return 0;
-      // });
-        setResultado({ cargando: false, data: data });
+      setResultado({ cargando: false, data: data });
       
     } catch (error) {
       console.log(error);

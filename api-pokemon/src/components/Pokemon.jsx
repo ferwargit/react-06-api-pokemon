@@ -12,7 +12,7 @@ const Pokemon = () => {
   
   return (
     <>
-      <h1>La página de los 20 Pokemones</h1>
+      {/* <h1>La página de los 20 Pokemones</h1> */}
 
       {
         cargando

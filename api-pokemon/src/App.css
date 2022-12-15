@@ -1,3 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #69c8c6;
+}
+
 .App {
   text-align: center;
+}
+
+nav {
+  padding: 10px;
+  text-align: left;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav img {
+  width: 15%;
+  height: 100px;
+  margin-left: 10px;
+  position: relative;
+}
+
+nav h1 {
+  width: 85%;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.8%;
+  margin-left: 19%;
+  padding: 0;
+  position: relative;
 }
